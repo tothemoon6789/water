@@ -1,43 +1,53 @@
-import { useState } from 'react';
-import Accordion from '../../components/Accordion';
-import Alert from '../../components/Alert';
-import Badge from '../../components/Badge';
-import Button from '../../components/Button';
-import Bar from '../../components/Charts/Bar';
-import Modal from '../../components/Modal';
-import './style.scss'
+import { useState } from "react";
+import Accordion from "../../components/Accordion";
+import Alert from "../../components/Alert";
+import Badge from "../../components/Badge";
+import Button from "../../components/Button";
+import Card from "../../components/Card";
+import Bar from "../../components/Charts/Bar";
+import Modal from "../../components/Modal";
+import "./style.scss";
 export default function BasicLayout() {
-  const [alert, setAlert] = useState(false)
-  console.log('in basic layout')
+  const [alert, setAlert] = useState(false);
+  console.log("in basic layout");
   const handleOnClick = () => {
-    setAlert(!alert)
-  }
+    setAlert(!alert);
+  };
   return (
     <>
       <div className="basic-layout">
         <header>
           <h1>Game Store</h1>
         </header>
-        <nav>This is navigtion bar  
-          <Badge/>
-          </nav>
+        <nav>
+          This is navigtion bar
+          <Badge />
+        </nav>
         <article>
           <div className="article1">
-            <Modal/>
+            <Modal />
             <Button onClick={handleOnClick} />
-            {alert && <Alert buttonAlert={alert}/>}
-            <Accordion/>
-            <Accordion/>
-            <Accordion/>
-            <Accordion/>
-            <Accordion/>
+            {alert && <Alert buttonAlert={alert} />}
+            <Accordion />
+            <Accordion />
+            <Accordion />
           </div>
           <div className="article2">
-            <Bar/>
-           
+            <Bar />
+            <div className="card-grid">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
           </div>
           <div className="article3">
-            <Button/>
+            <Button />
           </div>
         </article>
         <footer>this is footer</footer>

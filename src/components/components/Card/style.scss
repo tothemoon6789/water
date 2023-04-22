@@ -1,0 +1,13 @@
+@import '../sass/abstracts/variables.scss';
+.card {
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    border-right: 5px;
+    .header {
+        img {
+            width: 100%;
+        }
+    }
+}
