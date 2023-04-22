@@ -12,35 +12,35 @@
   background-color: $background-color;
 }
 header {
-  height: 15vh;
+  min-height: 15vh;
   @include BasisLayout();
 }
 nav {
-  height: 9vh;
+  min-height: 9vh;
   margin-top: 1vh;
   // background-color: red;
   @include BasisLayout();
 }
 article {
-  height: 54vh;
+  min-height: 54vh;
   margin-top: 1vh;
   .article1 {
     @include BasisLayout();
-    height: calc(52vh / 3);
+    min-height: calc(52vh / 3);
   }
   .article2 {
     margin-top: 1vh;
     @include BasisLayout();
-    height: calc(52vh / 3);
+    min-height: calc(52vh / 3);
   }
   .article3 {
     margin-top: 1vh;
     @include BasisLayout();
-    height: calc(52vh / 3);
+    min-height: calc(52vh / 3);
   }
 }
 footer {
-  height: 19vh;
+  min-height: 19vh;
   margin-top: 1vh;
   @include BasisLayout();
 }

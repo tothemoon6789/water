@@ -1,3 +1,4 @@
+import Accordion from '../../components/Accordion';
 import Alert from '../../components/Alert';
 import Button from '../../components/Button';
 import Bar from '../../components/Charts/Bar';
@@ -15,6 +16,11 @@ export default function BasicLayout() {
           <div className="article1">
             <Modal/>
             <Alert/>
+            <Accordion/>
+            <Accordion/>
+            <Accordion/>
+            <Accordion/>
+            <Accordion/>
           </div>
           <div className="article2">
             <Bar/>
