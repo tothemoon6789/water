@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello wolrd</h1>
+    <button onclick="forLoop()">CLICK ME</button>
+    <iframe
+    
+        id="iframeBox"
+      name="DBox"
+      src="https://www.whois.com/whois/baovechatluongcao.net"
+      width="100%"
+      height="5000px"
+    ></iframe>
+  </body>
+  <script>
+    const data = [];
+
+    const linkWebSite = [
+      "baoveanninh24h.net",
+      "baovechatluongcao.net",
+      "baovekhuongthinh.com",
+      "batchebinhduong.net",
+    ];
+    const sleep = (ms) => {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    };
+
+    const addData = (link) => {
+      return sleep(3000).then((v) => {
+        const row = [1,2];
+        console.log('hello wolrd')
+        let iframe = document.getElementById('iframeBox');
+        console.log('iframe:' , iframe)
+        window.open("https://www.whois.com/whois/" + link, "DBox");
+        let x = document.querySelectorAll(".df-row");
+        console.log('bien x selector all', x[0]);
+    //     console.log(x[0].childNodes[1].innerText)
+    //    row.push(x[0].childNodes[1].innerText)
+    //    row.push(x[1].childNodes[1].innerText)
+    //    row.push(x[2].childNodes[1].innerText)
+        return row;
+      }).catch((v) => {
+        alert('Web chua load hay j j do !') 
+      })
+      ;
+    };
+
+    const forLoop = async (_) => {
+      console.log("Start");
+
+      for (let index = 0; index < linkWebSite.length; index++) {
+        const numFruit = await addData(linkWebSite[index]);
+        data.push(numFruit);
+        console.log(data);
+      }
+
+      console.log("End");
+      generateCSV();
+    };
+    // forLoop();
+    // genderal csv
+
+    function generateCSV() {
+      var csv = "Name, Value1, Value2, Value3\n";
+      data.forEach(function (row) {
+        csv += row.join(",");
+        csv += "\n";
+      });
+
+      var hiddenElement = document.createElement("a");
+      hiddenElement.href = "data:text/csv;charset=utf-8," + encodeURI(csv);
+      hiddenElement.target = "_blank";
+      hiddenElement.download = "data.csv";
+      hiddenElement.click();
+    }
+
+    // function myFunction (){
+    //     window.open("https://stackoverflow.com/questions/8702266/navigate-url-in-iframe-with-javascript", "DBox");
+    // }
+  </script>
+</html>

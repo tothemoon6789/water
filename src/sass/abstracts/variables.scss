@@ -1,0 +1,32 @@
+//! Hệ màu nền
+$background-color: white;
+// background color;
+// dùng cho màu nền, ở đây muốn nói đến màu nền của ứng dụng, 
+// là lớp layer có độ sâu nhất khi nhìn từ trên xuống.
+// chứ khôn phải là thuộc tíh background-color của bất cứ thành phần nào.
+$surface-color: white;
+// surface-color là màu dùng làm nền cho cho lớp layer nằm trên lớp layer background
+$primay-color: #6200EE;
+// tông màu chủ đạo xuyên suốt ap, 
+// nếu không có màu secondary thì có thể dùng priamry để accent
+$secondary-color:#BB86FC;
+// secondary : tông màu chủ đạo thứ 2 phụ trợ.
+// dùng cho floating action button 
+// dùng cho selection controls như sliders hoặc switches, 
+// dùng cho văn bản được chọn lọc làm nổi bậc lên màu secondary
+// dùng cho thanh tiến trình
+$error-color: #B00020;
+// error color là loại màu nền, dùng cho thành phần ui error
+// =====================================
+//! Hệ màu nằm trên màu nền
+$on-background-color:#000000;
+$on-surface-color: #000000;
+$on-primary-color:#FFFFFF;
+$on-secondary-color: #FFFFFF;
+$on-error-color: #FFFFFF;
+
+//! shadown
+$shadown-color: 0 2px 4px rgba(0,0,0,0.19);
+
+//! global padding
+$box-padding: 12px;

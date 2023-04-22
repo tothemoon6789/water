@@ -1,0 +1,39 @@
+@import "../sass/style.scss";
+// @import "../sass/abstracts/variables.scss";
+.water-button {
+  // hinh dang
+  padding: $padding-item;
+  background-color: $primary-color;
+  color: $on-primary-color;
+  border: none;
+  font-weight: 200;
+  display: inline-block;
+  transition: all linear .2s;
+  position: relative;
+  cursor: pointer;
+  // trang thai khi dung yen: khong co
+  animation: buttonAnimation linear 1s infinite alternate-reverse;
+  // vi tri: khong co vi tri.
+  // visited
+  // hover
+  &:hover{
+    transform: translateY(-10%);
+  }
+  // clicked
+  &:focus {
+    transform: translateY(10%);
+    background-color: $secondary-color;
+  }
+  
+  // active
+  
+}
+@keyframes buttonAnimation {
+  0%{
+    border-radius: 5px;
+  }
+  100%{
+    border-radius: 20px;
+
+  }
+}

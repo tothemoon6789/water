@@ -1,0 +1,88 @@
+// @import "../sass/abstracts/variables.scss";
+@import "../sass/style.scss";
+.alert {
+    // I. Tai diem di
+    // 1. hình dạng
+    display: flex;
+    max-height: 10vh;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-color: $primary-color;
+    color: $on-primary-color;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-style: italic;
+    // 2. vị trí
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    transform: translateX(100%);
+    // II. Chuyen dong
+    // 1. Thoi gian va kieu chuyen dong
+    transition: all linear 0.2s;
+    .alert-icon {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+        // box-shadow: 4px 0 4px 0 rgba(0, 0, 0, 0.19);
+        .bluetooth-icon {
+            animation: iconAnimation linear 2s infinite;
+            &:hover {
+                color: yellow;
+                cursor: pointer;
+            }
+
+        }
+    }
+    .alert-content {
+        color: white;
+        padding: 10px;
+        position: relative;
+        .alert-progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: $secondary-color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all linear 0.15s;
+        }
+    }
+    .alert-close-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        transition: all linear 0.15s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    // II. Chuyen dong 
+}
+.alert-show {
+    transform: translateX(0%);
+}
+// TODO: RESPONSE
+@media (max-width:768px) {
+    .alert {
+        // 1 . hinh dang
+
+    }
+}
+@media (min-width:992px) {
+    .alert {
+        max-width: 30%;
+    }
+    
+}
+@keyframes iconAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

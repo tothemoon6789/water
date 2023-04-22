@@ -1,0 +1,49 @@
+@media (max-width: 576px) {
+  .basic-layout {
+    padding: 0 5px;
+  }
+  header {
+  }
+}
+@media (min-width: 576px) {
+  .basic-layout {
+    padding: 0 10px;
+  }
+  header {
+  }
+  article {
+    display: flex;
+    .article1 {
+      margin-top: 0;
+      width: 30%;
+      height: 100%;
+      margin-right: 10px;
+    }
+    .article2 {
+      margin-top: 0;
+      width: 40%;
+      height: 100%;
+    }
+    .article3 {
+      margin-top: 0;
+      width: 30%;
+      height: 100%;
+      margin-left: 10px;
+    }
+  }
+}
+@media (min-width: 768px) {
+    .basic-layout {
+        padding: 0 30px;
+      }
+}
+@media (min-width: 992px) {
+  .basic-layout {
+    padding: 0 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .basic-layout {
+    padding: 0px 140px;
+  }
+}
