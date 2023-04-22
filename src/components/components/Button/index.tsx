@@ -1,4 +1,4 @@
-import './style.scss'
+import "./style.scss";
 // 1. TẠI ĐIỂM ĐI (điểm A)
 //      1. Hình dạng.
 // 1. display
@@ -37,8 +37,18 @@ import './style.scss'
 // 2.2 Chuyển động từ B về A
 //     1. Thời gian
 //     2. Kiểu chuyển động
-export default function Button (){
-    return (
-        <button className='water-button'>CLICK ME PLZ !</button>
-    )
+interface ButtonProps {
+  onClick?: () => void 
+// name:string
 }
+const Button: React.FC<ButtonProps> = ({ onClick }) => {
+  return (
+    <button 
+
+    onClick={onClick} 
+    className="water-button">
+      CLICK ME PLZ !
+    </button>
+  );
+};
+export default Button;
