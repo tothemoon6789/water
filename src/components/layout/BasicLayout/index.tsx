@@ -19,7 +19,7 @@ export default function BasicLayout() {
           <h1>Game Store</h1>
         </header>
         <nav>This is navigtion bar  
-          {/* <Badge/> */}
+          <Badge/>
           </nav>
         <article>
           <div className="article1">
