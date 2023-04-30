@@ -1,0 +1,53 @@
+@import './variable.scss';
+header {
+    
+}
+.body {
+    min-height: 70vh;
+}
+footer {
+    min-height: 15vh;
+}
+@media (max-width:576px) {
+    header {
+        background-color: yellow;
+    }
+    .body {
+        background-color: yellow;
+    }
+}
+
+@media (min-width:576px) {
+    header {
+        background-color: green;
+    }
+    .body {
+        background-color: green;
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        background-color: cyan;
+    }
+    .body {
+        background-color: cyan;
+    }
+}
+
+@media (min-width:992px) {
+    header {
+        background-color: $primary-color;
+    }
+    .body {
+        background-color: $primary-color;
+    }
+}
+@media (min-width:1200px) {
+    header {
+        background-color: gray;
+    }
+    .body {
+        background-color: gray;
+    }
+}
