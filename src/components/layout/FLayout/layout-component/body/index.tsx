@@ -1,3 +1,10 @@
+import Nav from "./nav";
+import Racing from "./racing";
+
 export default function Body (){
-    return <section className="body">I AM BODY</section>
+    return <div className="body">
+        <Nav/>
+        <Racing/>
+
+    </div>
 }

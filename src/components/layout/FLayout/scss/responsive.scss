@@ -1,50 +1,100 @@
 @import './variable.scss';
-header {
-    
+.header {
+   min-height: 8.5vh; 
+   
 }
 .body {
-    min-height: 70vh;
+    min-height: 90vh;
 }
-footer {
-    min-height: 15vh;
-}
+//todo: for mobile
 @media (max-width:576px) {
-    header {
+    .header {
         background-color: yellow;
+        margin: 0.5vh 0.5vh 0 0.5vh;
     }
     .body {
         background-color: yellow;
+        margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+        .nav {
+            min-height: 9.5vh;
+            margin-bottom: 0.5vh;
+            background-color: red;
+        }
+        .racing {
+            min-height: 80vh;
+            .left {
+                background-color: blue;
+                min-height: 70vh;
+                
+                .goal {
+                    min-height: 50vh;
+                }
+                .bottom {
+                    min-height: 20vh;
+                }
+                   
+            }
+            .right {
+                background-color: greenyellow;
+                min-height: 10vh;
+            }
+        }
     }
 }
 
 @media (min-width:576px) {
-    header {
+    .header {
         background-color: green;
     }
     .body {
         background-color: green;
     }
 }
-
+// for tablet
 @media (min-width:768px) {
-    header {
+    .header {
         background-color: cyan;
     }
     .body {
         background-color: cyan;
+        display: flex;
+        .nav {
+            width: 20%;
+        }
+        .racing {
+            width: 80%;
+            border: 1px solid;
+            display: flex;
+            .left {
+                width: 80%;
+                background-color: red;
+                .goal {
+                    min-height: 70%;
+                }
+                .bottom {
+                    min-height: 30%;
+                    border: 1px solid;
+                }
+            }
+            .right {
+                width: 20%;
+                background-color: yellow;
+            }
+        }
     }
 }
 
 @media (min-width:992px) {
-    header {
+    .header {
         background-color: $primary-color;
     }
     .body {
         background-color: $primary-color;
     }
 }
+// todo: for desktop
 @media (min-width:1200px) {
-    header {
+    .header {
         background-color: gray;
     }
     .body {

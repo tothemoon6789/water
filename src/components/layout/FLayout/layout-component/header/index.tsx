@@ -1,7 +1,7 @@
 export default function Header (){
   return (
     <>
-        <header>I am header</header>
+        <div className="header">THong tin cong ty</div>
     </>
   )
 }
