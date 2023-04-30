@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BasicLayout from "./components/layout/BasicLayout";
 import FLayout from "./components/layout/FLayout";
-import Test from "./components/layout/Test/Test";
 import MainLayout from "./components/MainLayout";
 
 export default function App (){

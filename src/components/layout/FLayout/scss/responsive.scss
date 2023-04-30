@@ -1,103 +1,224 @@
-@import './variable.scss';
+@import "./variable.scss";
 .header {
-   min-height: 8.5vh; 
-   
+  min-height: 8.5vh;
 }
 .body {
-    min-height: 90vh;
+  min-height: 90vh;
+  .nav {
+  }
+  .racing {
+    .left {
+        overflow: hidden;
+      .goal {
+      }
+      .bottom {
+        min-height: 20vh;
+        display: flex;
+        align-items: flex-end;
+        background-color: black;
+        position: relative;
+        .bar-char-1 {
+          .bar {
+            width: 20px;
+            height: 30px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-2 {
+          .bar {
+            width: 20px;
+            height: 60px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-3 {
+          .bar {
+            width: 20px;
+            height: 70px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-4 {
+          .bar {
+            width: 20px;
+            height: 10px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-5 {
+          .bar {
+            width: 20px;
+            height: 30px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-6 {
+          .bar {
+            width: 20px;
+            height: 20px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-7 {
+          .bar {
+            width: 20px;
+            height: 40px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+        .bar-char-8 {
+          .bar {
+            width: 20px;
+            height: 50px;
+            background-color: greenyellow;
+            margin-left: 5px;
+          }
+          .name {
+            writing-mode: vertical-lr;
+            color: white;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 //todo: for mobile
-@media (max-width:576px) {
-    .header {
-        background-color: yellow;
-        margin: 0.5vh 0.5vh 0 0.5vh;
+@media (max-width: 576px) {
+  .header {
+    background-color: yellow;
+    margin: 0.5vh 0.5vh 0 0.5vh;
+  }
+  .body {
+    background-color: yellow;
+    margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    .nav {
+      min-height: 9.5vh;
+      margin-bottom: 0.5vh;
+      background-color: red;
     }
-    .body {
-        background-color: yellow;
-        margin: 0.5vh 0.5vh 0.5vh 0.5vh;
-        .nav {
-            min-height: 9.5vh;
-            margin-bottom: 0.5vh;
-            background-color: red;
+    .racing {
+      min-height: 80vh;
+      .left {
+        background-color: blue;
+        min-height: 70vh;
+
+        .goal {
+          min-height: 50vh;
         }
-        .racing {
-            min-height: 80vh;
-            .left {
-                background-color: blue;
-                min-height: 70vh;
-                
-                .goal {
-                    min-height: 50vh;
-                }
-                .bottom {
-                    min-height: 20vh;
-                }
-                   
-            }
-            .right {
-                background-color: greenyellow;
-                min-height: 10vh;
-            }
+        .bottom {
+          min-height: 20vh;
+          display: flex;
+          align-items: flex-end;
+          background-color: black;
         }
+      }
+      .right {
+        background-color: greenyellow;
+        min-height: 10vh;
+      }
     }
+  }
 }
 
-@media (min-width:576px) {
-    .header {
-        background-color: green;
-    }
-    .body {
-        background-color: green;
-    }
+@media (min-width: 576px) {
+  .header {
+    background-color: green;
+  }
+  .body {
+    background-color: green;
+  }
 }
 // for tablet
-@media (min-width:768px) {
-    .header {
-        background-color: cyan;
+@media (min-width: 768px) {
+  .header {
+    background-color: cyan;
+  }
+  .body {
+    background-color: cyan;
+    display: flex;
+    .nav {
+      width: 20%;
     }
-    .body {
-        background-color: cyan;
-        display: flex;
-        .nav {
-            width: 20%;
+    .racing {
+      width: 80%;
+      border: 1px solid;
+      display: flex;
+      .left {
+        width: 80%;
+        background-color: red;
+        .goal {
+          min-height: 70%;
         }
-        .racing {
-            width: 80%;
-            border: 1px solid;
-            display: flex;
-            .left {
-                width: 80%;
-                background-color: red;
-                .goal {
-                    min-height: 70%;
-                }
-                .bottom {
-                    min-height: 30%;
-                    border: 1px solid;
-                }
-            }
-            .right {
-                width: 20%;
-                background-color: yellow;
-            }
+        .bottom {
+          min-height: 30%;
+          border: 1px solid;
         }
+      }
+      .right {
+        width: 20%;
+        background-color: yellow;
+      }
     }
+  }
 }
 
-@media (min-width:992px) {
-    .header {
-        background-color: $primary-color;
-    }
-    .body {
-        background-color: $primary-color;
-    }
+@media (min-width: 992px) {
+  .header {
+    background-color: $primary-color;
+  }
+  .body {
+    background-color: $primary-color;
+  }
 }
 // todo: for desktop
-@media (min-width:1200px) {
-    .header {
-        background-color: gray;
-    }
-    .body {
-        background-color: gray;
-    }
+@media (min-width: 1200px) {
+  .header {
+    background-color: gray;
+  }
+  .body {
+    background-color: gray;
+  }
 }
