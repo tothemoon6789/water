@@ -4,8 +4,11 @@ import "./style.scss";
 export default function FLayout() {
   return (
     <>
+    <div className="wrap">
+
       <Header/>
       <Body/>
+    </div>
     </>
   );
 }

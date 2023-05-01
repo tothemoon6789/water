@@ -1,246 +1,253 @@
 @import "./variable.scss";
-.header {
-  min-height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: $shadown-color;
-  .left {
+.wrap {
+  min-height: 100vh;
+  .header {
+    min-height: 10vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    .logo {
-      border-radius: 50%;
-      overflow: hidden;
-      width: 50px;
-      height: 50px;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-row: auto auto;
-      box-shadow: $shadown-color;
-      transition: all linear 0.4s;
-
-      .part {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-      .part:nth-child(2) {
-        background-color: $primary-color;
-      }
-    }
-    .brand {
-      margin-left: 5px;
-    }
-  }
-  .right {
-  }
-}
-.body {
-  min-height: 90vh;
-  .nav {
-    min-height: 9.5vh;
-    margin-bottom: 0.5vh;
-    display: grid;
-    // padding: 5px 0;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 5px;
-    .detail {
-      box-shadow: $shadown-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  .racing {
+    box-shadow: $shadown-color;
     .left {
-      box-shadow: $shadown-color;
-      .goal {
-        .goal-title {
-          padding-top: 10px;
-          text-align: center;
-        }
-        .racing-road {
-          width: 80%;
-          height: 30px;
-          border-bottom: 1px solid;
-          border-right: 2px dashed;
-          margin: 10px auto auto auto;
-          display: flex;
-          align-items: center;
-          position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      .logo {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row: auto auto;
+        box-shadow: $shadown-color;
+        transition: all linear 0.4s;
 
-          .racing-group:nth-child(1) {
-            transition: all linear 0.2s;
-            height: 80%;
-            border: 1px dashed;
-            border-left: none;
-            position: absolute;
-            z-index: 1;
-          }
-          .racing-group:nth-child(2) {
-            transition: all linear 0.2s;
-            height: 65%;
-            border: 1px double;
-            border-left: none;
-            width: 30%;
-            position: absolute;
-            z-index: 2;
-          }
-          .racing-group:nth-child(3) {
-            transition: all linear 0.2s;
-            height: 45%;
-            border: 1px dotted;
-            border-left: none;
-            width: 50%;
-            position: absolute;
-            z-index: 3;
-          }
-          .racing-group:nth-child(4) {
-            transition: all linear 0.2s;
-            height: 5%;
-            border: 2px solid $primary-color;
-            background-color: $primary-color;
-            border-left: none;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            width: 70%;
-            position: absolute;
-            z-index: 4;
-          }
+        .part {
+          width: 100%;
+          height: 100%;
+          border: none;
         }
-        .racing-content {
-          margin-top: 5px;
-          display: flex;
-          justify-content: space-evenly;
-          .racing-group {
-            display: flex;
-            .racing-color {
-              width: 10px;
-              height: 10px;
-              border: 1px solid;
-            }
-            .racing-note {
-              margin-left: 5px;
-            }
-          }
-          .racing-group:nth-child(1) {
-            .racing-color {
-              border: 2px dashed;
-            }
-          }
-          .racing-group:nth-child(2) {
-            .racing-color {
-              border: 2px dotted;
-            }
-          }
-          .racing-group:nth-child(3) {
-            .racing-color {
-              border: 2px solid;
-            }
-          }
-          .racing-group:nth-child(4) {
-            .racing-color {
-              border: 2px solid;
-            }
-          }
+        .part:nth-child(2) {
+          background-color: $primary-color;
         }
       }
-      .bottom {
-        min-height: 20vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+      .brand {
+        margin-left: 5px;
+      }
+    }
+    .right {
+    }
+  }
+  .body {
+    min-height: 90vh;
+    .nav {
+      min-height: 10vh;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 5px;
+      .detail {
         box-shadow: $shadown-color;
-        position: relative;
-        .bar-chart-name {
-          white-space: nowrap;
-          writing-mode: vertical-lr;
-          margin-bottom: 10px;
-        }
-        .bar-chart {
-          display: block;
-          .bar {
-            width: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .racing {
+      .left {
+        // min-height: 60vh;
+        box-shadow: $shadown-color;
+        .goal {
+          .goal-title {
+            text-align: center;
+          }
+          .racing-road {
+            width: 80%;
             height: 30px;
-            background-color: $primary-color;
-            margin-left: 5px;
+            border-bottom: 1px solid;
+            border-right: 2px dashed;
+            margin: 10px auto auto auto;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .racing-group:nth-child(1) {
+              transition: all linear 0.2s;
+              height: 80%;
+              border: 1px dashed;
+              border-left: none;
+              position: absolute;
+              z-index: 1;
+            }
+            .racing-group:nth-child(2) {
+              transition: all linear 0.2s;
+              height: 65%;
+              border: 1px double;
+              border-left: none;
+              width: 30%;
+              position: absolute;
+              z-index: 2;
+            }
+            .racing-group:nth-child(3) {
+              transition: all linear 0.2s;
+              height: 45%;
+              border: 1px dotted;
+              border-left: none;
+              width: 50%;
+              position: absolute;
+              z-index: 3;
+            }
+            .racing-group:nth-child(4) {
+              transition: all linear 0.2s;
+              height: 5%;
+              border: 2px solid $primary-color;
+              background-color: $primary-color;
+              border-left: none;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+              width: 70%;
+              position: absolute;
+              z-index: 4;
+            }
           }
-          .name {
-            height: 40px;
-            margin-left: 10px;
-            margin-top: 3px;
-            writing-mode: vertical-rl;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            transform: skewX(15deg);
+          .racing-content {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            .racing-group {
+              display: flex;
+              .racing-color {
+                width: 10px;
+                height: 10px;
+                border: 1px solid;
+              }
+              .racing-note {
+                margin-left: 5px;
+              }
+            }
+            .racing-group:nth-child(1) {
+              .racing-color {
+                border: 2px dashed;
+              }
+            }
+            .racing-group:nth-child(2) {
+              .racing-color {
+                border: 2px dotted;
+              }
+            }
+            .racing-group:nth-child(3) {
+              .racing-color {
+                border: 2px solid;
+              }
+            }
+            .racing-group:nth-child(4) {
+              .racing-color {
+                border: 2px solid;
+              }
+            }
           }
         }
-        .bar-chart:nth-child(2) {
-          @extend .bar-chart;
-          .bar {
-            height: 40px;
+        .bottom {
+          min-height: 20vh;
+          box-shadow: $shadown-color;
+
+          .bar-chart-name {
+            text-align: center;
           }
-        }
-        .bar-chart:nth-child(3) {
-          @extend .bar-chart;
-          .bar {
-            height: 50px;
-          }
-        }
-        .bar-chart:nth-child(4) {
-          @extend .bar-chart;
-          .bar {
-            height: 60px;
-          }
-        }
-        .bar-chart:nth-child(5) {
-          @extend .bar-chart;
-          .bar {
-            height: 20px;
-          }
-        }
-        .bar-chart:nth-child(6) {
-          @extend .bar-chart;
-          .bar {
-            height: 10px;
-          }
-        }
-        .bar-chart:nth-child(7) {
-          @extend .bar-chart;
-          .bar {
-            height: 60px;
-          }
-        }
-        .bar-chart:nth-child(8) {
-          @extend .bar-chart;
-          .bar {
-            height: 50px;
-          }
-        }
-        .bar-chart:nth-child(9) {
-          @extend .bar-chart;
-          .bar {
-            height: 80px;
-          }
-        }
-        .bar-chart:nth-child(10) {
-          @extend .bar-chart;
-          .bar {
-            height: 50px;
-          }
-        }
-        .bar-chart:nth-child(11) {
-          @extend .bar-chart;
-          .bar {
-            height: 20px;
-          }
-        }
-        .bar-chart:nth-child(12) {
-          @extend .bar-chart;
-          .bar {
-            height: 10px;
+          .chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            position: relative;
+            .bar-chart-name {
+              white-space: nowrap;
+              writing-mode: vertical-lr;
+            }
+            .bar-chart {
+              display: block;
+              .bar {
+                width: 5px;
+                height: 30px;
+                background-color: $primary-color;
+                margin-left: 5px;
+              }
+              .name {
+                height: 40px;
+                margin-left: 10px;
+                margin-top: 3px;
+                writing-mode: vertical-rl;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transform: skewX(15deg);
+              }
+            }
+            .bar-chart:nth-child(2) {
+              @extend .bar-chart;
+              .bar {
+                height: 40px;
+              }
+            }
+            .bar-chart:nth-child(3) {
+              @extend .bar-chart;
+              .bar {
+                height: 50px;
+              }
+            }
+            .bar-chart:nth-child(4) {
+              @extend .bar-chart;
+              .bar {
+                height: 60px;
+              }
+            }
+            .bar-chart:nth-child(5) {
+              @extend .bar-chart;
+              .bar {
+                height: 20px;
+              }
+            }
+            .bar-chart:nth-child(6) {
+              @extend .bar-chart;
+              .bar {
+                height: 10px;
+              }
+            }
+            .bar-chart:nth-child(7) {
+              @extend .bar-chart;
+              .bar {
+                height: 60px;
+              }
+            }
+            .bar-chart:nth-child(8) {
+              @extend .bar-chart;
+              .bar {
+                height: 50px;
+              }
+            }
+            .bar-chart:nth-child(9) {
+              @extend .bar-chart;
+              .bar {
+                height: 80px;
+              }
+            }
+            .bar-chart:nth-child(10) {
+              @extend .bar-chart;
+              .bar {
+                height: 50px;
+              }
+            }
+            .bar-chart:nth-child(11) {
+              @extend .bar-chart;
+              .bar {
+                height: 20px;
+              }
+            }
+            .bar-chart:nth-child(12) {
+              @extend .bar-chart;
+              .bar {
+                height: 10px;
+              }
+            }
           }
         }
       }
@@ -249,50 +256,58 @@
 }
 //todo: for mobile
 @media (max-width: 576px) {
-  .header {
-    margin: 0.5vh 1vh 0 1vh;
-    h1 {
-      font-size: 24px;
-    }
-  }
-  .body {
-    background-color: $background-color;
-    margin: 1vh 1vh 0.5vh 1vh;
-    .nav {
-      .detail {
+  .wrap {
+    min-height: 100vh;
+    overflow: hidden;
+    
+    .header {
+      min-height: 10vh;
+      // margin: 0.5vh 1vh 0 1vh;
+      h1 {
+        font-size: 24px;
       }
     }
-    .racing {
-      min-height: 80vh;
-      .left {
-        min-height: 70vh;
+    .body {
+      min-height: 90vh;
+      background-color: $background-color;
+      // margin: 1vh 1vh 0.5vh 1vh;
+      .nav {
+        min-height: 5vh;
+        .detail {
+          
+        }
+      }
+      .racing {
+        min-height: 85vh;
+        .left {
+          min-height: 80vh;
 
-        .goal {
-          min-height: 50vh;
-        }
-        .bottom {
-          min-height: 20vh;
-          display: flex;
-          align-items: flex-end;
-          box-shadow: $shadown-color;
-        }
-      }
-      .right {
-        box-shadow: $shadown-color;
-        min-height: 9vh;
-        margin-bottom: 1vh;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 20px;
-        .person {
-          img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+          .goal {
           }
-          .title {
-            display: none;
+          .bottom {
+            min-height: 20vh;
+            box-shadow: $shadown-color;
+            .chart {
+              display: flex;
+              align-items: flex-end;
+            }
+          }
+        }
+        .right {
+          box-shadow: $shadown-color;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 20px;
+          .person {
+            img {
+              width: 4vh;
+              height: 4vh;
+              border-radius: 50%;
+            }
+            .title {
+              display: none;
+            }
           }
         }
       }
@@ -301,47 +316,50 @@
 }
 
 @media (min-width: 576px) {
-  .header {
-  }
-  .body {
+  .wrap {
+    .header {
+    }
+    .body {
+    }
   }
 }
 // for tablet
 @media (min-width: 768px) {
-  .header {
-  }
-  .body {
-    display: flex;
-    .nav {
-      width: 20%;
+  .wrap {
+    .header {
     }
-    .racing {
-      width: 80%;
+    .body {
       display: flex;
-      .left {
-        width: 80%;
-        .goal {
-          min-height: 70%;
-        }
-        .bottom {
-          min-height: 30%;
-        }
-      }
-      .right {
+      .nav {
         width: 20%;
-        .person {
-          display: flex;
-          justify-content: start;
-          align-items: center;
-          padding: 5px;
-          img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+      }
+      .racing {
+        width: 80%;
+        display: flex;
+        .left {
+          width: 80%;
+          .goal {
+            min-height: 70%;
           }
-          .title {
-            margin-left: 5px;
-          
+          .bottom {
+            min-height: 30%;
+          }
+        }
+        .right {
+          width: 20%;
+          .person {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 5px;
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+            .title {
+              margin-left: 5px;
+            }
           }
         }
       }
@@ -350,15 +368,19 @@
 }
 
 @media (min-width: 992px) {
-  .header {
-  }
-  .body {
+  .wrap {
+    .header {
+    }
+    .body {
+    }
   }
 }
 // todo: for desktop
 @media (min-width: 1200px) {
-  .header {
-  }
-  .body {
+  .wrap {
+    .header {
+    }
+    .body {
+    }
   }
 }
