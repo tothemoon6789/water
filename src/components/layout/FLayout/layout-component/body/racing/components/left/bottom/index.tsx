@@ -1,37 +1,58 @@
 export default function Bottom() {
   return (
     <div className="bottom">
-      <div className="bar-char-1">
+      <div className="bar-chart-name">Biểu đồ thi đua</div>
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">t.linh</div>
+        <div className="name">Linh</div>
       </div>
-      <div className="bar-char-2">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">tr.xuan thuy</div>
+        <div className="name">Vuong</div>
       </div>
-      <div className="bar-char-3">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">thanh nhan</div>
+        <div className="name">Nhan</div>
       </div>
-      <div className="bar-char-4">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">minh trong</div>
+        <div className="name">Trong</div>
       </div>
-      <div className="bar-char-5">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">my hanh</div>
+        <div className="name">Hanh</div>
       </div>
-      <div className="bar-char-6">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">minh hoang</div>
+        <div className="name">Hoang</div>
       </div>
-      <div className="bar-char-7">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">hoai phuong</div>
+        <div className="name">Xuan</div>
       </div>
-      <div className="bar-char-8">
+      <div className="bar-chart">
         <div className="bar"></div>
-        <div className="name">xuan xah</div>
+        <div className="name">Binh</div>
+      </div>
+      <div className="bar-chart">
+        <div className="bar"></div>
+        <div className="name">Nam</div>
+      </div>
+      <div className="bar-chart">
+        <div className="bar"></div>
+        <div className="name">Vuong</div>
+      </div>
+      <div className="bar-chart">
+        <div className="bar"></div>
+        <div className="name">Heo</div>
+      </div>
+      <div className="bar-chart">
+        <div className="bar"></div>
+        <div className="name">Minh</div>
+      </div>
+      <div className="bar-chart">
+        <div className="bar"></div>
+        <div className="name">Vinh</div>
       </div>
     </div>
   );
