@@ -14,7 +14,7 @@ export default function Goal() {
   return (
     <>
       <div className="goal">
-        <div className="goal-title">Doanh số các nhóm</div>
+        <div className="goal-title"><h4>Doanh số các nhóm</h4></div>
         <div className="racing-road">
           <div className="racing-group" style={{width:`${firstWidth}`}}></div>
           <div className="racing-group" style={{width:`${secondWidth}`}}></div>
@@ -25,19 +25,19 @@ export default function Goal() {
         <div className="racing-content">
           <div className="racing-group">
             <div className="racing-color"></div>
-            <div className="racing-note">Nhóm Ngọc</div>
+            <div className="racing-note"><span>Nhóm Ngọc</span></div>
           </div>
           <div className="racing-group">
             <div className="racing-color"></div>
-            <div className="racing-note">Nhóm Trung</div>
+            <div className="racing-note"><span>Nhóm Ngọc</span></div>
           </div>
           <div className="racing-group">
             <div className="racing-color"></div>
-            <div className="racing-note">Nhóm Minh</div>
+            <div className="racing-note"><span>Nhóm Ngọc</span></div>
           </div>
           <div className="racing-group">
             <div className="racing-color"></div>
-            <div className="racing-note">Nhóm Hoàng</div>
+            <div className="racing-note"><span>Nhóm Ngọc</span></div>
           </div>
         </div>
       </div>

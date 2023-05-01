@@ -20,7 +20,9 @@ export default function Header() {
             <div className="part"></div>
             <div className="part"></div>
           </div>
-          <div className="brand">THẦN TỐC COMPANY</div>
+          <div className="brand">
+            <h1>THẦN TỐC COMPANY</h1>
+          </div>
         </div>
         <div className="right"></div>
       </div>

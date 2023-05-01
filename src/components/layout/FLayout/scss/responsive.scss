@@ -57,6 +57,7 @@
       box-shadow: $shadown-color;
       .goal {
         .goal-title {
+          padding-top: 10px;
           text-align: center;
         }
         .racing-road {
@@ -68,7 +69,7 @@
           display: flex;
           align-items: center;
           position: relative;
-          
+
           .racing-group:nth-child(1) {
             transition: all linear 0.2s;
             height: 80%;
@@ -124,7 +125,6 @@
             }
           }
           .racing-group:nth-child(1) {
-
             .racing-color {
               border: 2px dashed;
             }
@@ -135,13 +135,11 @@
             }
           }
           .racing-group:nth-child(3) {
-
             .racing-color {
               border: 2px solid;
             }
           }
           .racing-group:nth-child(4) {
-
             .racing-color {
               border: 2px solid;
             }
@@ -163,7 +161,7 @@
         .bar-chart {
           display: block;
           .bar {
-            width: 20px;
+            width: 5px;
             height: 30px;
             background-color: $primary-color;
             margin-left: 5px;
@@ -252,11 +250,14 @@
 //todo: for mobile
 @media (max-width: 576px) {
   .header {
-    margin: 0.5vh 0.5vh 0 0.5vh;
+    margin: 0.5vh 1vh 0 1vh;
+    h1 {
+      font-size: 24px;
+    }
   }
   .body {
     background-color: $background-color;
-    margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    margin: 1vh 1vh 0.5vh 1vh;
     .nav {
       .detail {
       }
@@ -277,8 +278,23 @@
         }
       }
       .right {
-        background-color: $primary-color;
-        min-height: 10vh;
+        box-shadow: $shadown-color;
+        min-height: 9vh;
+        margin-bottom: 1vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+        .person {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .title {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -313,6 +329,21 @@
       }
       .right {
         width: 20%;
+        .person {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          padding: 5px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .title {
+            margin-left: 5px;
+          
+          }
+        }
       }
     }
   }
