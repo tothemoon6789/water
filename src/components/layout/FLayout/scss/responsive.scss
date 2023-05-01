@@ -1,13 +1,60 @@
 @import "./variable.scss";
 .header {
   min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: $shadown-color;
+  .left {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    .logo {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-row: auto auto;
+      box-shadow: $shadown-color;
+      transition: all linear 0.4s;
+
+      .part {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .part:nth-child(2) {
+        background-color: $primary-color;
+      }
+    }
+    .brand {
+      margin-left: 5px;
+    }
+  }
+  .right {
+  }
 }
 .body {
   min-height: 90vh;
   .nav {
+    min-height: 9.5vh;
+    margin-bottom: 0.5vh;
+    display: grid;
+    // padding: 5px 0;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    .detail {
+      box-shadow: $shadown-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .racing {
     .left {
+      box-shadow: $shadown-color;
       .goal {
         .goal-title {
           text-align: center;
@@ -21,30 +68,41 @@
           display: flex;
           align-items: center;
           position: relative;
-          .racing-group:nth-child(1){
+          
+          .racing-group:nth-child(1) {
+            transition: all linear 0.2s;
             height: 80%;
             border: 1px dashed;
-            width: 10%;
+            border-left: none;
             position: absolute;
             z-index: 1;
           }
-          .racing-group:nth-child(2){
+          .racing-group:nth-child(2) {
+            transition: all linear 0.2s;
             height: 65%;
             border: 1px double;
+            border-left: none;
             width: 30%;
             position: absolute;
             z-index: 2;
           }
-          .racing-group:nth-child(3){
+          .racing-group:nth-child(3) {
+            transition: all linear 0.2s;
             height: 45%;
             border: 1px dotted;
+            border-left: none;
             width: 50%;
             position: absolute;
             z-index: 3;
           }
-          .racing-group:nth-child(4){
-            height: 15%;
-            border: 2px solid;
+          .racing-group:nth-child(4) {
+            transition: all linear 0.2s;
+            height: 5%;
+            border: 2px solid $primary-color;
+            background-color: $primary-color;
+            border-left: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
             width: 70%;
             position: absolute;
             z-index: 4;
@@ -55,7 +113,6 @@
           display: flex;
           justify-content: space-evenly;
           .racing-group {
-            
             display: flex;
             .racing-color {
               width: 10px;
@@ -66,18 +123,39 @@
               margin-left: 5px;
             }
           }
-          
+          .racing-group:nth-child(1) {
+
+            .racing-color {
+              border: 2px dashed;
+            }
+          }
+          .racing-group:nth-child(2) {
+            .racing-color {
+              border: 2px dotted;
+            }
+          }
+          .racing-group:nth-child(3) {
+
+            .racing-color {
+              border: 2px solid;
+            }
+          }
+          .racing-group:nth-child(4) {
+
+            .racing-color {
+              border: 2px solid;
+            }
+          }
         }
       }
       .bottom {
         min-height: 20vh;
         display: flex;
         align-items: flex-end;
-        background-color: black;
+        justify-content: center;
+        box-shadow: $shadown-color;
         position: relative;
         .bar-chart-name {
-          color: white;
-          background-color: red;
           white-space: nowrap;
           writing-mode: vertical-lr;
           margin-bottom: 10px;
@@ -87,11 +165,10 @@
           .bar {
             width: 20px;
             height: 30px;
-            background-color: greenyellow;
+            background-color: $primary-color;
             margin-left: 5px;
           }
           .name {
-            color: white;
             height: 40px;
             margin-left: 10px;
             margin-top: 3px;
@@ -99,76 +176,75 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            transform: skewX(15deg)
+            transform: skewX(15deg);
           }
         }
         .bar-chart:nth-child(2) {
           @extend .bar-chart;
           .bar {
-            height: 40px
+            height: 40px;
           }
         }
         .bar-chart:nth-child(3) {
           @extend .bar-chart;
           .bar {
-            height: 50px
+            height: 50px;
           }
         }
         .bar-chart:nth-child(4) {
           @extend .bar-chart;
           .bar {
-            height: 60px
+            height: 60px;
           }
         }
         .bar-chart:nth-child(5) {
           @extend .bar-chart;
           .bar {
-            height: 20px
+            height: 20px;
           }
         }
         .bar-chart:nth-child(6) {
           @extend .bar-chart;
           .bar {
-            height: 10px
+            height: 10px;
           }
         }
         .bar-chart:nth-child(7) {
           @extend .bar-chart;
           .bar {
-            height: 60px
+            height: 60px;
           }
         }
         .bar-chart:nth-child(8) {
           @extend .bar-chart;
           .bar {
-            height: 50px
+            height: 50px;
           }
         }
         .bar-chart:nth-child(9) {
           @extend .bar-chart;
           .bar {
-            height: 80px
+            height: 80px;
           }
         }
         .bar-chart:nth-child(10) {
           @extend .bar-chart;
           .bar {
-            height: 50px
+            height: 50px;
           }
         }
         .bar-chart:nth-child(11) {
           @extend .bar-chart;
           .bar {
-            height: 20px
+            height: 20px;
           }
         }
         .bar-chart:nth-child(12) {
           @extend .bar-chart;
           .bar {
-            height: 10px
+            height: 10px;
           }
         }
-       
       }
     }
   }
@@ -176,21 +252,18 @@
 //todo: for mobile
 @media (max-width: 576px) {
   .header {
-    background-color: yellow;
     margin: 0.5vh 0.5vh 0 0.5vh;
   }
   .body {
-    background-color: yellow;
+    background-color: $background-color;
     margin: 0.5vh 0.5vh 0.5vh 0.5vh;
     .nav {
-      min-height: 9.5vh;
-      margin-bottom: 0.5vh;
-      background-color: red;
+      .detail {
+      }
     }
     .racing {
       min-height: 80vh;
       .left {
-        background-color: blue;
         min-height: 70vh;
 
         .goal {
@@ -200,11 +273,11 @@
           min-height: 20vh;
           display: flex;
           align-items: flex-end;
-          background-color: black;
+          box-shadow: $shadown-color;
         }
       }
       .right {
-        background-color: greenyellow;
+        background-color: $primary-color;
         min-height: 10vh;
       }
     }
@@ -213,41 +286,33 @@
 
 @media (min-width: 576px) {
   .header {
-    background-color: green;
   }
   .body {
-    background-color: green;
   }
 }
 // for tablet
 @media (min-width: 768px) {
   .header {
-    background-color: cyan;
   }
   .body {
-    background-color: cyan;
     display: flex;
     .nav {
       width: 20%;
     }
     .racing {
       width: 80%;
-      border: 1px solid;
       display: flex;
       .left {
         width: 80%;
-        background-color: red;
         .goal {
           min-height: 70%;
         }
         .bottom {
           min-height: 30%;
-          border: 1px solid;
         }
       }
       .right {
         width: 20%;
-        background-color: yellow;
       }
     }
   }
@@ -255,18 +320,14 @@
 
 @media (min-width: 992px) {
   .header {
-    background-color: $primary-color;
   }
   .body {
-    background-color: $primary-color;
   }
 }
 // todo: for desktop
 @media (min-width: 1200px) {
   .header {
-    background-color: gray;
   }
   .body {
-    background-color: gray;
   }
 }
